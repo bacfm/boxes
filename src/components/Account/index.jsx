@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './style.scss';
 
 export default class Account extends React.Component {
@@ -6,7 +7,6 @@ export default class Account extends React.Component {
         super(props);
         this.state = {}
     }
-
     render(){
         return (
             <div className="account">
@@ -15,7 +15,7 @@ export default class Account extends React.Component {
                     <div className="order">
                         <div className="order-control">
                             <h3>Для того, чтобы сделать заказ нажмите на кнопку</h3>
-                            <button>ЗАКАЗАТЬ</button>
+                            <Link to={'/order'}>ЗАКАЗАТЬ</Link>
                         </div>
                     </div>
                 </div>

@@ -20,7 +20,7 @@ $secondart-text-color: #493b30;
             font-weight: normal; 
             margin: 0 auto;
         }
-        button{
+        a{
             display: inline-block;
             padding: 16px 60px;
             background: #769252;
@@ -30,6 +30,7 @@ $secondart-text-color: #493b30;
             font-weight: bold;
             border: none;
             cursor: pointer;
+            text-decoration: none;
         }
     }
 }
