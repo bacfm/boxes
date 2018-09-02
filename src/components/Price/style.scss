@@ -1,0 +1,38 @@
+.price-section{
+  background-image: url("./img/price-bg.png");
+  background-repeat: no-repeat;
+  padding-top: 230px;
+  min-height: 700px;
+  background-size: 100%;
+  background-size: cover;
+  .wrapper{
+    margin: 0 auto;
+    max-width: 1280px;
+.price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .price-table{
+    .table-header-item {
+      background: #c0986c;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+    div{
+      margin: 0 5px 5px 0;
+      padding-top: 18px;
+      font-size: 18px;
+      color: #605247;
+      background: #f2e9e0;
+      padding-left: 13px;
+    }
+    display: grid;
+    height: 420px;
+    grid-template-columns: 405px 405px 405px;
+    grid-template-rows: 85px 85px 85px 85px 85px;
+  }
+}
+  }
+}

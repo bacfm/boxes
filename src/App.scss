@@ -1,0 +1,19 @@
+h1{
+    display: block;
+    font-size: 36px;
+    font-weight: bold;
+    color: #493b30;
+    position: relative;
+    padding-bottom: 30px;
+    &:after{
+      content: '';
+      width: 147px;
+      height: 7px;
+      background: #779453;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      border-radius: 25px;
+      transform: translate(-50%);
+    }
+  }

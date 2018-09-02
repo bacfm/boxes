@@ -1,0 +1,42 @@
+.footer {
+  background-image: url("./img/footer-bg.png");
+  background-size: 100%;
+  background-size: cover;
+  .footer-wrap{
+    padding: 27px 67px 15px 72px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+  .contacts {
+    .phone {
+      display: block;
+      margin-bottom: 16px;
+    }
+  }
+  .position {
+    span {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  .social {
+    a {
+      display: inline-block;
+      background-repeat: no-repeat;
+      width: 43px;
+      height: 43px;
+      margin-right: 17px;
+    }
+    .inst-logo {
+      background-image: url("./img/Instagram_logo.png");
+    }
+    .twitt-logo {
+      background-image: url("./img/logo-twitter.png");
+    }
+    .fb-logo {
+      background-image: url("./img/feysbuk_logo.png");
+    }
+  }
+}
+}

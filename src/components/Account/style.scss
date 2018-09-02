@@ -1,0 +1,36 @@
+$secondart-text-color: #493b30;
+.order-section{
+    height: 650px;
+    background-image: url("./img/order-bg.png");
+    background-repeat: no-repeat;
+    position: relative;
+.order {
+    .order-control{
+        background: rgba(255, 255, 255, .5);
+        position: absolute;
+        left: 50%;
+        bottom: 130px;
+        transform: translate(-50%);
+        padding: 45px 55px 35px 55px;
+        text-align: center;
+        h3{
+            width: 215px;
+            color: $secondart-text-color;
+            font-size: 18px;
+            font-weight: normal; 
+            margin: 0 auto;
+        }
+        button{
+            display: inline-block;
+            padding: 16px 60px;
+            background: #769252;
+            color: #ffffff;
+            margin-top: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+}

@@ -1,0 +1,150 @@
+.contacts-block {
+  h1{
+    display: block;
+    width: 265px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #493b30;
+    position: relative;
+    padding-bottom: 30px;
+    &:after{
+      content: '';
+      width: 147px;
+      height: 7px;
+      background: #779453;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      border-radius: 25px;
+      transform: translate(-50%);
+    }
+  }
+  .contacts-content {
+    background-image: url("./img/contacts-bg.png");
+    background-size: 100%;
+    background-size: cover;
+    .contacts-wrap{
+    height: 1180px;
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+    .info-block {
+      position: absolute;
+      border: 24px solid #c0986c;
+      background: #f6f1ee;
+      padding: 0 83px 0 66px;
+      text-align: center;
+      height: calc(366px - 23px);
+      .info-item {
+        font-size: 24px;
+        color: #493b30;
+        margin-top: 25px;
+        display: block;
+      }
+    }
+    .contact-emails {
+      bottom: 525px;
+      left: 50px;
+    }
+    .contact-city {
+      bottom: 430px;
+      right: 410px;
+      z-index: 10;
+    }
+    .contact-phones {
+      bottom: 525px;
+      right: 50px;
+      z-index: 0;
+    }
+  }
+  }
+  .call-back{
+    background: #779453;
+    padding: 37px 28px 60px 85px;
+    text-align: center;
+    color: white;
+    .call-back-controls {
+      .time {
+        display: inline-flex;
+        align-items: center;
+        .time-control {
+          position: relative;
+          .selected-day {
+            margin-right: 0;
+            min-width: calc(208px - 56px);
+            text-align: left;
+          }
+        }
+        h4{
+          display: inline-block;
+          font-weight: normal;
+          margin-right: 20px;
+          font-size: 20px;
+        }
+        span, .selected-day{
+          font-size: 24px;
+          font-weight: bold;
+          border: none;
+          text-align: center;
+          margin-right: 23px;
+          padding: 8px 40px 8px 16px;
+          cursor: pointer;
+          background: #fff;
+          color: #493b30;
+          position: relative;
+          &:after{
+            content: '';
+            height: 20px;
+            width: 12px;
+            background-image: url("./img/list_arrow.png");
+            position: absolute;
+            top: 11px;
+            right: 7px;
+          }
+        }
+      }
+      .user-phone{
+        display: inline-block;
+        margin-left: 65px;
+        input{
+          font-size: 20px;
+          width: calc(270px - 20px);
+          padding: 16px 0 13px 20px;
+          border: none;
+
+        }
+        button{
+          font-size: 20px;
+          font-weight: bold;
+          color: white;
+          padding: 16px 25px 13px 25px;
+          background: #c0986c;
+          border: none;
+        }
+      }
+    }
+    .contacts-control-list{
+      position: absolute;
+      top: 20px;
+      left: -40px;
+      li{
+        width: calc(82px - 16px);
+        padding: 8px 0 8px 16px;
+        background: #ebebeb;
+        list-style: none;
+        text-align: left;
+        color: #493b30;
+        cursor: pointer;
+        font-size: 20px;
+        &:hover {
+          background: #a1a1a1;
+        }
+      }
+    }
+    .show-days {
+      li {
+        width: calc(208px - 16px);
+      }
+    }
+  }
+}
