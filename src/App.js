@@ -9,6 +9,7 @@ import LoginForm from './components/AuthForm/login';
 import NewsPage from './components/News';
 import Account from './components/Account';
 import OrderForm from './components/Account/orderForm';
+import PaymentStep from './components/Account/orderForm/secondStep';
 import {Switch, Route} from 'react-router-dom';
 import './App.scss';
 
@@ -26,6 +27,7 @@ class App extends Component {
               <Route exact path='/news' component={NewsPage} />
               <Route exact path='/account' component={Account} />
               <Route exact path='/order' component={OrderForm} />
+              <Route exact path='/order-payment' component={PaymentStep} />
           </Switch>
           <Footer />
       </div>

@@ -1,5 +1,8 @@
 import React from 'react';
 import picture from './img/picture.png';
+import add_box from './img/add_box.png'
+import previous from './img/previous.png';
+import WarningPopUp from './warning';
 import './style.scss';
 
 export default class OrderForm extends React.Component {
@@ -7,18 +10,22 @@ export default class OrderForm extends React.Component {
         super(props);
         this.state = {
             boxes: [],
-            pictures: [],
-            width: '',
-            long: '',
-            height: '',
-            boxWeight: '',
-            colorValue: '',
+            boxCharacteristics: {
+                width: '',
+                long: '',
+                height: '',
+                boxWeight: '',
+                colorValue: '',
+                pictureColorValue: '',
+                pictures: [],
+                specialValue: '',
+                quantity: ''
+            },
+            currentBoxNum: 1,
             showColors: false,
-            pictureColorValue: '',
             showPictColors: false,
-            specialValue: '',
             showSpecial: false,
-            quantity: ''
+            warningFields: false
         }
         this.onWidthChange = this.onWidthChange.bind(this);
         this.onLongChange = this.onLongChange.bind(this);
@@ -27,34 +34,63 @@ export default class OrderForm extends React.Component {
         this.onPrintColorChoose = this.onPrintColorChoose.bind(this);
         this.onQuantityChange = this.onQuantityChange.bind(this);
         this.onDownloadPicturesChange = this.onDownloadPicturesChange.bind(this);
+        this.addNewBox = this.addNewBox.bind(this);
     }
     onWidthChange(ev){
-        this.setState({width: ev.target.value.replace(/[^0-9]/g, '')})
+        let boxCharacteristics = Object.assign({}, this.state.boxCharacteristics);
+        boxCharacteristics.width = ev.target.value.replace(/[^0-9]/g, '');
+        this.setState({boxCharacteristics})
     }
     onLongChange(ev){
-        this.setState({long: ev.target.value.replace(/[^0-9]/g, '')})
+        let boxCharacteristics = Object.assign({}, this.state.boxCharacteristics);
+        boxCharacteristics.long = ev.target.value.replace(/[^0-9]/g, '');
+        this.setState({boxCharacteristics})
     }
     onHeightChange(ev){
-        this.setState({height: ev.target.value.replace(/[^0-9]/g, '')})
+        let boxCharacteristics = Object.assign({}, this.state.boxCharacteristics);
+        boxCharacteristics.height = ev.target.value.replace(/[^0-9]/g, '');
+        this.setState({boxCharacteristics})
     }
     onColorChoose(color){
-        this.setState({colorValue: color})
+        let boxCharacteristics = Object.assign({}, this.state.boxCharacteristics);
+        boxCharacteristics.colorValue = color;
+        this.setState({boxCharacteristics})
     }
     onPrintColorChoose(color){
-        this.setState({pictureColorValue: color})
+        let boxCharacteristics = Object.assign({}, this.state.boxCharacteristics);
+        boxCharacteristics.pictureColorValue = color;
+        this.setState({boxCharacteristics})
     }
     onQuantityChange(ev){
-        this.setState({quantity: ev.target.value.replace(/[^0-9]/g, '')})
+        let boxCharacteristics = Object.assign({}, this.state.boxCharacteristics);
+        boxCharacteristics.quantity = ev.target.value.replace(/[^0-9]/g, '');
+        this.setState({boxCharacteristics})
     }
     onDownloadPicturesChange(ev){
         let files = [];
-        for(var i = 0; i < ev.target.files.length; i++){
+        let boxCharacteristics = Object.assign({}, this.state.boxCharacteristics);
+        for(let i = 0; i < ev.target.files.length; i++){
             files.push(ev.target.files[i]);
         }
-        this.setState({pictures: [...this.state.pictures, ...files]})
+        boxCharacteristics.pictures = [...this.state.boxCharacteristics.pictures, ...files];
+        this.setState({boxCharacteristics});
+    }
+    addNewBox(ev){
+        ev.preventDefault();
+        this.setState({boxes: [...this.state.boxes, this.state.boxCharacteristics]});
+        let boxCharacteristics = Object.assign({}, this.state.boxCharacteristics);
+        boxCharacteristics.width = '';
+        boxCharacteristics.long = '';
+        boxCharacteristics.height = '';
+        boxCharacteristics.boxWeight = '';
+        boxCharacteristics.colorValue = '';
+        boxCharacteristics.pictureColorValue = '';
+        boxCharacteristics.pictures = [];
+        boxCharacteristics.specialValue = '';
+        boxCharacteristics.quantity = '';
+        this.setState({boxCharacteristics, currentBoxNum: this.state.currentBoxNum + 1});
     }
     render(){
-console.log(this.state.pictures)
         const {
             width,
             long,
@@ -64,15 +100,17 @@ console.log(this.state.pictures)
             pictureColorValue,
             specialValue,
             quantity
-        } = this.state;
+        } = this.state.boxCharacteristics;
+        const {currentBoxNum} = this.state;
         const colors = ["Черный", "Белый", "Красный", "Зеленый"];
+        console.log(this.state);
         return (
             <section className="section-container user-order-section">
                 <div className="content-wrapper order-content">
                     <div className="order-form">
                         <h1>Оформить заказ</h1>
                         <span className="box-instruction">Заполните информацию о товаре</span>
-                        <h3 className="box-num">Коробка №1</h3>
+                        <h3 className="box-num">Коробка №{currentBoxNum}</h3>
                         <div className="order-information">
                             <div className="box-main-characteristics">
                                 <div className="form-field required-field"><input placeholder="Ширина(см)" value={width} onChange={this.onWidthChange}/></div>
@@ -96,7 +134,7 @@ console.log(this.state.pictures)
                                 <div className="download-picture">
                                     <div className="pictures-list">
                                         <span>Рисунок:</span>
-                                        {this.state.pictures.map((p, index) => (<div className="photo-item" key={index}><img src={picture} alt='1' /> {p.name}</div>))}
+                                        {this.state.boxCharacteristics.pictures.map((p, index) => (<div className="photo-item" key={index}><img src={picture} alt='1' /> {p.name}</div>))}
                                         <div className="add-picture-btn">
                                             <input type="file" onChange={this.onDownloadPicturesChange} multiple/>
                                             <label></label>
@@ -119,8 +157,14 @@ console.log(this.state.pictures)
                                 <div className="form-field required-field"><input placeholder="Количество" value={quantity} onChange={this.onQuantityChange} /></div>
                             </div>
                         </div>
+                        <div className="order-controls">
+                            {currentBoxNum > 1 ? <span className="previous_box"><img src={previous} alt="prev"/> Коробка №{currentBoxNum - 1}</span> : null }
+                            <span className="add_new_box" onClick={this.addNewBox}>Добавить коробку <img src={add_box} alt="add"/></span>
+                        </div>
+                        <button className="order-btn">Далее</button>
                     </div>
                 </div>
+                {this.state.warningFields ? <WarningPopUp onClick={() => this.setState({warningFields: false})} /> : null}
             </section>
         );
     }
