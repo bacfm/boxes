@@ -16,13 +16,13 @@ export default class PaymentStep extends React.Component {
     render() {
         const {company, deliver, pay, comment} = this.state;
         return (
-            <section className="section-container user-order-section">
-                <div className="content-wrapper order-content">
-                    <div className="order-form payment-form">
-                        <div className="order-information" style={{display: 'block'}}>
+            <section className="section-container user-form-section">
+                <div className="content-wrapper form-content">
+                    <div className="user-form payment-form">
+                        <div className="form-information" style={{display: 'block'}}>
                             <h1>Оформить заказ</h1>
                             <div className="box-instruction">Заполните данные для доставки</div>
-                            <div className="box-main-characteristics payment-info">
+                            <div className="form-main-characteristics payment-info">
                                 <div className="list-wrapper">
                                     {company ? company : 'Компания'}
                                 </div>
@@ -35,7 +35,7 @@ export default class PaymentStep extends React.Component {
                                 <div className="form-field"><textarea placeholder="Комментарий к заказу"></textarea></div>
                             </div>
                         </div>
-                        <div className="order-controls">
+                        <div className="form-controls">
                             <span className="previous_box"><img src={previous} alt="prev"/> Вернуться к выбору товара </span>
                         </div>
                         <button className="order-btn">Оформить заказ</button>

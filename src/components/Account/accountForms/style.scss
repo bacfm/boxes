@@ -1,11 +1,11 @@
-.user-order-section {
+.user-form-section {
   background-image: url("./img/bg.png");
-  height: 940px;
+  height: 920px;
   background-repeat: no-repeat;
-  .order-content {
+  .form-content {
     position: relative;
 
-    .order-form {
+    .user-form {
       position: absolute;
       left: 50%;
       bottom: 30px;
@@ -18,7 +18,7 @@
         color: #493b30;
         font-size: 18px;
       }
-      .order-information {
+      .form-information {
         display: flex;
         input {
           width: calc(364px - 16px);
@@ -86,7 +86,7 @@
       h3 {
         font-weight: bold;
       }
-      .box-main-characteristics {
+      .form-main-characteristics {
         display: inline-flex;
         flex-direction: column;
         margin-right: 65px;
@@ -109,7 +109,7 @@
             }
           }
         }
-      .box-secondary-characteristics {
+      .form-secondary-characteristics {
         display: inline-block;
         .download-picture{
           margin-bottom: 15px;
@@ -159,7 +159,7 @@
         }
       }
     }
-      .order-controls{
+      .form-controls{
         position: relative;
         color: #54473c;
         font-size: 16px;
@@ -227,5 +227,23 @@
         margin-top: 30px;
       }
     }
+  }
+}
+.save_edit {
+  width: 365px;
+  background: #779453;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.user-companies {
+  text-align: left;
+  color: #695c53;
+  width: 365px;
+  margin: 0 auto;
+  li{
+    list-style: none;
+    margin-bottom: 12px;
   }
 }

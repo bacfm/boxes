@@ -35,3 +35,77 @@ $secondart-text-color: #493b30;
     }
 }
 }
+
+.my-orders {
+    .content-wrapper {
+        height: calc(100% - 124px);
+    }
+    .orders-list {
+        max-width: 1090px;
+        margin: 0 auto;
+        .order-item {
+            background: #e6e6e6;
+            width: calc(100% - 80px);
+            padding: 25px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #493b30;
+            font-size: 20px;
+            .box_picture {
+                height: 80px;
+                width: 120px;
+                background-image: url("./img/box.png");
+                background-size: 100%;
+                background-size: cover;
+                display: inline-block;
+            }
+            .order_number {
+                font-weight: bold;
+            }
+            .order_status {
+                span {
+                    background: #fff;
+                    padding: 20px 15px 15px 15px;
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+    .edit-profile {
+        width: 100%;
+        padding: 50px 0;
+        background: #779453;
+        a{
+            margin: 0 auto;
+            padding: 20px 70px;
+            color: #54483e;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            background: #fff;
+        }
+    }
+}
+.more-orders {
+    padding-top: 50px;
+    text-align: center;
+    h4{
+        font-size: 24px;
+        color: #5e554d;
+        margin: 0;
+        padding-bottom: 12px;
+        font-weight: 300;
+    }
+    button{
+        background-image: url("./img/arrow.png");
+        background-repeat: no-repeat;
+        width: 75px;
+        height: 40px;
+        border: none;
+        display: block;
+        margin:  0 auto;
+        cursor: pointer;
+    }
+}

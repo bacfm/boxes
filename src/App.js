@@ -8,8 +8,9 @@ import SignupForm from './components/AuthForm/signup.jsx';
 import LoginForm from './components/AuthForm/login';
 import NewsPage from './components/News';
 import Account from './components/Account';
-import OrderForm from './components/Account/orderForm';
-import PaymentStep from './components/Account/orderForm/secondStep';
+import OrderForm from './components/Account/accountForms';
+import PaymentStep from './components/Account/accountForms/secondStep';
+import EditProfile from './components/Account/accountForms/editProfile';
 import {Switch, Route} from 'react-router-dom';
 import './App.scss';
 
@@ -28,6 +29,7 @@ class App extends Component {
               <Route exact path='/account' component={Account} />
               <Route exact path='/order' component={OrderForm} />
               <Route exact path='/order-payment' component={PaymentStep} />
+              <Route exact path='/edit-profile' component={EditProfile} />
           </Switch>
           <Footer />
       </div>

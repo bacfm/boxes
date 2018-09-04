@@ -1,5 +1,5 @@
 .contacts-block {
-  h1{
+  h1 {
     display: block;
     width: 265px;
     font-size: 28px;
@@ -7,7 +7,7 @@
     color: #493b30;
     position: relative;
     padding-bottom: 30px;
-    &:after{
+    &:after {
       content: '';
       width: 147px;
       height: 7px;
@@ -23,42 +23,42 @@
     background-image: url("./img/contacts-bg.png");
     background-size: 100%;
     background-size: cover;
-    .contacts-wrap{
-    height: 1180px;
-    max-width: 1280px;
-    margin: 0 auto;
-    position: relative;
-    .info-block {
-      position: absolute;
-      border: 24px solid #c0986c;
-      background: #f6f1ee;
-      padding: 0 83px 0 66px;
-      text-align: center;
-      height: calc(366px - 23px);
-      .info-item {
-        font-size: 24px;
-        color: #493b30;
-        margin-top: 25px;
-        display: block;
+    .contacts-wrap {
+      height: 1180px;
+      max-width: 1280px;
+      margin: 0 auto;
+      position: relative;
+      .info-block {
+        position: absolute;
+        border: 24px solid #c0986c;
+        background: #f6f1ee;
+        padding: 0 83px 0 66px;
+        text-align: center;
+        height: calc(366px - 23px);
+        .info-item {
+          font-size: 24px;
+          color: #493b30;
+          margin-top: 25px;
+          display: block;
+        }
+      }
+      .contact-emails {
+        bottom: 525px;
+        left: 50px;
+      }
+      .contact-city {
+        bottom: 430px;
+        right: 410px;
+        z-index: 10;
+      }
+      .contact-phones {
+        bottom: 525px;
+        right: 50px;
+        z-index: 0;
       }
     }
-    .contact-emails {
-      bottom: 525px;
-      left: 50px;
-    }
-    .contact-city {
-      bottom: 430px;
-      right: 410px;
-      z-index: 10;
-    }
-    .contact-phones {
-      bottom: 525px;
-      right: 50px;
-      z-index: 0;
-    }
   }
-  }
-  .call-back{
+  .call-back {
     background: #779453;
     padding: 37px 28px 60px 85px;
     text-align: center;
@@ -75,13 +75,13 @@
             text-align: left;
           }
         }
-        h4{
+        h4 {
           display: inline-block;
           font-weight: normal;
           margin-right: 20px;
           font-size: 20px;
         }
-        span, .selected-day{
+        span, .selected-day {
           font-size: 24px;
           font-weight: bold;
           border: none;
@@ -92,7 +92,7 @@
           background: #fff;
           color: #493b30;
           position: relative;
-          &:after{
+          &:after {
             content: '';
             height: 20px;
             width: 12px;
@@ -103,17 +103,17 @@
           }
         }
       }
-      .user-phone{
+      .user-phone {
         display: inline-block;
         margin-left: 65px;
-        input{
+        input {
           font-size: 20px;
           width: calc(270px - 20px);
           padding: 16px 0 13px 20px;
           border: none;
 
         }
-        button{
+        button {
           font-size: 20px;
           font-weight: bold;
           color: white;
@@ -123,11 +123,11 @@
         }
       }
     }
-    .contacts-control-list{
+    .contacts-control-list {
       position: absolute;
       top: 20px;
       left: -40px;
-      li{
+      li {
         width: calc(82px - 16px);
         padding: 8px 0 8px 16px;
         background: #ebebeb;

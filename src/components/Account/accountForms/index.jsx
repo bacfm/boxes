@@ -105,14 +105,14 @@ export default class OrderForm extends React.Component {
         const colors = ["Черный", "Белый", "Красный", "Зеленый"];
         console.log(this.state);
         return (
-            <section className="section-container user-order-section">
-                <div className="content-wrapper order-content">
-                    <div className="order-form">
+            <section className="section-container user-form-section">
+                <div className="content-wrapper form-content">
+                    <div className="user-form">
                         <h1>Оформить заказ</h1>
                         <span className="box-instruction">Заполните информацию о товаре</span>
                         <h3 className="box-num">Коробка №{currentBoxNum}</h3>
-                        <div className="order-information">
-                            <div className="box-main-characteristics">
+                        <div className="form-information">
+                            <div className="form-main-characteristics">
                                 <div className="form-field required-field"><input placeholder="Ширина(см)" value={width} onChange={this.onWidthChange}/></div>
                                 <div className="form-field required-field"><input placeholder="Длина(см)" value={long} onChange={this.onLongChange} /></div>
                                 <div className="form-field required-field"><input placeholder="Высота(см)" value={height} onChange={this.onHeightChange} /></div>
@@ -130,7 +130,7 @@ export default class OrderForm extends React.Component {
                                     }
                                 </div>
                             </div>
-                            <div className="box-secondary-characteristics">
+                            <div className="form-secondary-characteristics">
                                 <div className="download-picture">
                                     <div className="pictures-list">
                                         <span>Рисунок:</span>
@@ -157,7 +157,7 @@ export default class OrderForm extends React.Component {
                                 <div className="form-field required-field"><input placeholder="Количество" value={quantity} onChange={this.onQuantityChange} /></div>
                             </div>
                         </div>
-                        <div className="order-controls">
+                        <div className="form-controls">
                             {currentBoxNum > 1 ? <span className="previous_box"><img src={previous} alt="prev"/> Коробка №{currentBoxNum - 1}</span> : null }
                             <span className="add_new_box" onClick={this.addNewBox}>Добавить коробку <img src={add_box} alt="add"/></span>
                         </div>

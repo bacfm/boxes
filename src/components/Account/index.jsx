@@ -1,4 +1,5 @@
 import React from 'react'
+import OrderItem from './orderItem';
 import {Link} from 'react-router-dom'
 import './style.scss';
 
@@ -23,7 +24,17 @@ export default class Account extends React.Component {
                 <section className="section-container my-orders">
                 <div className="content-wrapper">
                 <h1>Мои заказы</h1>
+                    <div className="orders-list">
+                        <OrderItem />
+                    </div>
+                    <div className="more-orders">
+                        <h4>Еще заказы</h4>
+                        <button></button>
+                    </div>
                 </div>
+                    <div className="edit-profile">
+                        <Link to={'/edit-profile'}>Редактировать профиль</Link>
+                    </div>
                 </section>
             </div>
         );
