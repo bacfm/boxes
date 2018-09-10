@@ -9,7 +9,7 @@ export default class OrderForm extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            boxes: [],
+            boxes: [this.boxCharacteristics],
             boxCharacteristics: {
                 width: '',
                 long: '',
@@ -35,36 +35,50 @@ export default class OrderForm extends React.Component {
         this.onQuantityChange = this.onQuantityChange.bind(this);
         this.onDownloadPicturesChange = this.onDownloadPicturesChange.bind(this);
         this.addNewBox = this.addNewBox.bind(this);
+        this.onPrevBox = this.onPrevBox.bind(this);
+        this.onNextBox = this.onNextBox.bind(this);
     }
     onWidthChange(ev){
         let boxCharacteristics = Object.assign({}, this.state.boxCharacteristics);
         boxCharacteristics.width = ev.target.value.replace(/[^0-9]/g, '');
-        this.setState({boxCharacteristics})
+        let newElem = boxCharacteristics;
+        let newBoxes = [...this.state.boxes.slice(0, this.state.currentBoxNum - 1), newElem, ...this.state.boxes.slice(this.state.currentBoxNum)]
+        this.setState({boxes: newBoxes, boxCharacteristics})
     }
     onLongChange(ev){
         let boxCharacteristics = Object.assign({}, this.state.boxCharacteristics);
         boxCharacteristics.long = ev.target.value.replace(/[^0-9]/g, '');
-        this.setState({boxCharacteristics})
+        let newElem = boxCharacteristics;
+        let newBoxes = [...this.state.boxes.slice(0, this.state.currentBoxNum - 1), newElem, ...this.state.boxes.slice(this.state.currentBoxNum)]
+        this.setState({boxes: newBoxes, boxCharacteristics})
     }
     onHeightChange(ev){
         let boxCharacteristics = Object.assign({}, this.state.boxCharacteristics);
         boxCharacteristics.height = ev.target.value.replace(/[^0-9]/g, '');
-        this.setState({boxCharacteristics})
+        let newElem = boxCharacteristics;
+        let newBoxes = [...this.state.boxes.slice(0, this.state.currentBoxNum - 1), newElem, ...this.state.boxes.slice(this.state.currentBoxNum)]
+        this.setState({boxes: newBoxes, boxCharacteristics})
     }
     onColorChoose(color){
         let boxCharacteristics = Object.assign({}, this.state.boxCharacteristics);
         boxCharacteristics.colorValue = color;
-        this.setState({boxCharacteristics})
+        let newElem = boxCharacteristics;
+        let newBoxes = [...this.state.boxes.slice(0, this.state.currentBoxNum - 1), newElem, ...this.state.boxes.slice(this.state.currentBoxNum)]
+        this.setState({boxes: newBoxes, boxCharacteristics})
     }
     onPrintColorChoose(color){
         let boxCharacteristics = Object.assign({}, this.state.boxCharacteristics);
         boxCharacteristics.pictureColorValue = color;
-        this.setState({boxCharacteristics})
+        let newElem = boxCharacteristics;
+        let newBoxes = [...this.state.boxes.slice(0, this.state.currentBoxNum - 1), newElem, ...this.state.boxes.slice(this.state.currentBoxNum)]
+        this.setState({boxes: newBoxes, boxCharacteristics})
     }
     onQuantityChange(ev){
         let boxCharacteristics = Object.assign({}, this.state.boxCharacteristics);
         boxCharacteristics.quantity = ev.target.value.replace(/[^0-9]/g, '');
-        this.setState({boxCharacteristics})
+        let newElem = boxCharacteristics;
+        let newBoxes = [...this.state.boxes.slice(0, this.state.currentBoxNum - 1), newElem, ...this.state.boxes.slice(this.state.currentBoxNum)]
+        this.setState({boxes: newBoxes, boxCharacteristics})
     }
     onDownloadPicturesChange(ev){
         let files = [];
@@ -73,7 +87,9 @@ export default class OrderForm extends React.Component {
             files.push(ev.target.files[i]);
         }
         boxCharacteristics.pictures = [...this.state.boxCharacteristics.pictures, ...files];
-        this.setState({boxCharacteristics});
+        let newElem = boxCharacteristics;
+        let newBoxes = [...this.state.boxes.slice(0, this.state.currentBoxNum - 1), newElem, ...this.state.boxes.slice(this.state.currentBoxNum)]
+        this.setState({boxes: newBoxes, boxCharacteristics})
     }
     addNewBox(ev){
         ev.preventDefault();
@@ -90,7 +106,19 @@ export default class OrderForm extends React.Component {
         boxCharacteristics.quantity = '';
         this.setState({boxCharacteristics, currentBoxNum: this.state.currentBoxNum + 1});
     }
+    onPrevBox(ev){
+        ev.preventDefault();
+        let prevBox = this.state.boxes[this.state.currentBoxNum - 2];
+        console.log(prevBox);
+        this.setState({boxCharacteristics: prevBox, currentBoxNum: this.state.currentBoxNum - 1})
+    }
+    onNextBox(ev){
+        ev.preventDefault();
+        let nextBox = this.state.boxes[this.state.currentBoxNum];
+        this.setState({boxCharacteristics: nextBox, currentBoxNum: this.state.currentBoxNum + 1})
+    }
     render(){
+        console.log(this.state.boxes);
         const {
             width,
             long,
@@ -158,8 +186,9 @@ export default class OrderForm extends React.Component {
                             </div>
                         </div>
                         <div className="form-controls">
-                            {currentBoxNum > 1 ? <span className="previous_box"><img src={previous} alt="prev"/> Коробка №{currentBoxNum - 1}</span> : null }
-                            <span className="add_new_box" onClick={this.addNewBox}>Добавить коробку <img src={add_box} alt="add"/></span>
+                            {currentBoxNum > 1 ? <span className="previous_box" onClick={this.onPrevBox}><img src={previous} alt="prev"/> Коробка №{currentBoxNum - 1}</span> : null }
+                            {this.state.boxes.length - this.state.currentBoxNum <= 0 ? <span className="add_new_box" onClick={this.addNewBox}>Добавить коробку <img src={add_box} alt="add"/></span> : null}
+                            {this.state.boxes.length - this.state.currentBoxNum > 0 ? <span className="next_box" onClick={this.onNextBox}>Коробка №{currentBoxNum + 1} <img src={previous}  alt="prev"/></span> : null }
                         </div>
                         <button className="order-btn">Далее</button>
                     </div>

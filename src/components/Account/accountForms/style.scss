@@ -26,7 +26,7 @@
           border: none;
           margin-bottom: 12px;
           font-size: 18px;
-          color: #a4a4a4;
+          color: #493b30;
           &::placeholder {
             color: #a4a4a4;
           }
@@ -120,6 +120,7 @@
             flex-wrap: wrap;
             width: 100%;
             span{
+              color: #493b30;
               display: block;
               margin-right: 20px;
             }
@@ -165,6 +166,7 @@
         font-size: 16px;
         cursor: pointer;
         margin-top: 20px;
+        height: 38px;
         .previous_box {
           float: left;
           img {
@@ -177,6 +179,14 @@
           img {
             vertical-align: middle;
             margin-left: 10px;
+          }
+        }
+        .next_box {
+          float: right;
+          img{
+            vertical-align: middle;
+            margin-left: 10px;
+            transform: rotate(180deg);
           }
         }
       }

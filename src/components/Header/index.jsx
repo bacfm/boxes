@@ -18,7 +18,7 @@ export default class Header extends Component {
                             <li><Link to='/account'>Личный кабинет</Link></li>
                         </ul>
                     </nav>
-                    <div className='user-controlls'>
+                    <div className='user-controls'>
                         <Link to="/login">Вход</Link>
                         <Link to="/signup">Регистрация</Link>
                     </div>
