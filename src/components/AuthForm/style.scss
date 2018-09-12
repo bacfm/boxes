@@ -39,6 +39,17 @@
             margin: 0 auto;
             margin-top: 18px;
         }
+        @media(max-width: 570px){
+            width: calc(90% - 100px);
+            padding: 30px 50px 50px 50px;
+            margin: 0 auto;
+            input{
+                width: calc(100% - 17px);
+            }
+            button {
+                width: 100%;
+            }
+        }
         .auth-controls{
             display: flex;
             justify-content: space-between;

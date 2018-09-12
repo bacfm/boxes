@@ -8,14 +8,23 @@ import slider3 from './img/slider3.png'
 
 export default class ProductSlider extends Component {
     render() {
+        var sliders;
+        if(window.innerWidth  <= 1270 && window.innerWidth > 940){
+            sliders = 2;
+        }else if(window.innerWidth <= 940){
+            sliders = 1
+        }else{
+            sliders = 3;
+        }
         var settings = {
             dots: false,
             infinite: true,
             speed: 500,
-            slidesToShow: 3,
+            slidesToShow: sliders,
             slidesToScroll: 1,
             arrows: true,
         };
+        console.log(sliders);
         return (
             <Slider {...settings}>
                 <div>

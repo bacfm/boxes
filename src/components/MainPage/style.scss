@@ -36,6 +36,10 @@ $secondary-text-size: 20px;
   .about-company {
     background-image: url('./img/about-company.png');
     .company-description{
+      @media(max-width: 980px){
+        left: 50%;
+        transform: translate(-50%);
+      }
       text-align: center;
       width: calc(590px - 84px);
       position: absolute;
@@ -244,14 +248,23 @@ $secondary-text-size: 20px;
     .slick-list {
       width: 80%;
       margin: 0 auto;
+      @media(max-width: 1270px){
+        width: 70%;
+      }
     }
     .slick-slider {
       margin-top: 88px;
+      @media(max-width: 940px){
+        .slick-slide{
+          img {
+            margin: 0 auto;
+          }
+        }
+      }
     }
     .products-description {
       width: 700px;
       margin: 0 auto;
-      margin-top: 80px;
       p {
         color: $secondart-text-color;
         font-size: $secondary-text-size;
@@ -263,6 +276,11 @@ $secondary-text-size: 20px;
     position: relative;
     height: 700px;
     .our-pluses {
+      @media(max-width: 980px){
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%);
+      }
       position: absolute;
       bottom: 96px;
       right: 47px;
@@ -300,6 +318,10 @@ $secondary-text-size: 20px;
     position: relative;
     height: 680px;
     .guarantees-info {
+      @media(max-width: 980px){
+        left: 50%;
+        transform: translate(-50%);
+      }
       text-align: center;
       width: calc(590px - 84px);
       position: absolute;
@@ -320,6 +342,20 @@ $secondary-text-size: 20px;
       font-size: 36px;
       display: inline-block;
       margin-right: 112px;
+    }
+    @media (max-width: 1245px) {
+      text-align: center;
+      padding: 86px 0;
+      h2{
+        display: block;
+        margin-right: 0;
+      }
+    }
+    @media(max-width: 760px){
+      padding: 50px 0;
+      h2{
+        font-size: 32px;
+      }
     }
   }
 }
