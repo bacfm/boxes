@@ -53,8 +53,10 @@ export default class Contacts extends Component {
                 <div className="call-back">
                     <h2>Хотите, мы перезвоним Вам в удобное время?</h2>
                     <div className="call-back-controls">
+
                         <div className="time">
                             <h4>Мы перезвоним Вам в:</h4>
+                            <div className="select-time-wrap">
                             <div className="time-control">
                                 <span>{this.state.hours}</span>
                             </div>
@@ -71,6 +73,7 @@ export default class Contacts extends Component {
                             null
                             }
                             </div>
+                        </div>
                             <div className="time-control">
                             <div className="selected-day" onClick={() => this.setState({showDays: !this.state.showDays})}>{this.state.day}</div>
                             { this.state.showDays ?

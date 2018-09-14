@@ -21,13 +21,19 @@
   }
   .contacts-content {
     background-image: url("./img/contacts-bg.png");
-    background-size: 100%;
+    background-position: center;
     background-size: cover;
     .contacts-wrap {
       height: 1180px;
       max-width: 1280px;
       margin: 0 auto;
       position: relative;
+      @media(max-width: 980px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 160px;
+      }
       .info-block {
         position: absolute;
         border: 24px solid #c0986c;
@@ -35,26 +41,79 @@
         padding: 0 6.48% 0 5.15%;
         text-align: center;
         height: calc(366px - 23px);
+        @media(max-width: 1230px){
+          padding: 0 5% 0 3.2%;
+        }
+        @media(max-width: 1140px){
+          padding: 0 2.5% 0 2.5%;
+          h1 {
+            font-size: 1.7rem;
+          }
+        }
+        @media (max-width: 980px) {
+          margin-bottom: 20px;
+          h1{
+            margin: 0 auto;
+            padding-top: 35px;
+          }
+        }
+        @media(max-width: 490px) {
+          padding: 0 4% 0 2.5%;
+        }
         .info-item {
           font-size: 24px;
           color: #493b30;
           margin-top: 25px;
           display: block;
+          @media(max-width: 1140px){
+            font-size: 1.3rem;
+          }
         }
       }
       .contact-emails {
-        bottom: 525px;
-        left: 50px;
+        @media(min-width: 980px) {
+          bottom: 525px;
+          left: 18%;
+          transform: translate(-18%);
+        }
+          @media (max-width: 980px)
+        {
+          position: static;
+          width: 40%;
+        }
+        @media(max-width: 770px){
+          width: 55%;
+        }
       }
       .contact-city {
-        bottom: 430px;
-        right: 410px;
-        z-index: 10;
+        @media(min-width: 980px) {
+          bottom: 130px;
+          left: 50%;
+          transform: translate(-50%);
+          z-index: 10;
+        }
+        @media (max-width: 980px) {
+          position: static;
+          width: 40%;
+        }
+        @media(max-width: 770px){
+          width: 55%;
+        }
       }
       .contact-phones {
-        bottom: 525px;
-        right: 50px;
-        z-index: 0;
+        @media(min-width: 980px) {
+          bottom: 525px;
+          right: 9%;
+          transform: translate(-9%);
+          z-index: 0;
+        }
+        @media (max-width: 980px) {
+          position: static;
+          width: 40%;
+        }
+        @media(max-width: 770px){
+          width: 55%;
+        }
       }
        @media(max-width: 1260px){
 
@@ -66,16 +125,91 @@
     padding: 37px 28px 60px 85px;
     text-align: center;
     color: white;
+    @media(max-width: 780px) {
+      padding: 37px 0 60px 0;
+      h2{
+        margin: 0 auto;
+        padding-bottom: 20px;
+      }
+      .call-back-controls{
+        margin: 0 auto;
+      }
+    }
+    @media(max-width: 800px){
+      h2{
+        font-size: 1.4rem;
+        @media(max-width: 690px) {
+          font-size: 1.2rem;
+        }
+        @media (max-width: 590px) {
+          padding-bottom: 0;
+        }
+      }
+    }
     .call-back-controls {
+      @media(max-width: 980px){
+        width: 90%;
+      }
+      @media(max-width: 690px) {
+        width: 100%;
+      }
       .time {
         display: inline-flex;
         align-items: center;
+        @media(max-width: 690px) {
+          width: calc(100% - 20px);
+          justify-content: space-around;
+          padding: 0 10px;
+        }
+        @media(max-width: 590px){
+         flex-direction: column;
+          justify-content: space-between;
+        }
         .time-control {
           position: relative;
+          @media(max-width: 590px) {
+
+          }
           .selected-day {
             margin-right: 0;
             min-width: calc(208px - 56px);
             text-align: left;
+            @media (max-width: 590px) {
+              width: 80px;
+              padding: 8px 60px 8px 22px;
+              margin: 0 auto;
+              font-size: 1rem;
+            }
+          }
+          @media(max-width: 590px){
+            display: block;
+          }
+        }
+        .select-time-wrap {
+          display: flex;
+          .time-control{
+            display: inline-block;
+          }
+          @media(max-width: 590px){
+            margin: 20px 0;
+            .time-control {
+              position: relative;
+              .contacts-control-list {
+                left: 10px;
+                padding: 0;
+                z-index: 10;
+                top: 11px;
+                li{
+                  width: 92px;
+                  font-size: 1rem;
+                }
+              }
+              span {
+                padding: 8px 60px 8px 30px;
+                margin-right: 10px;
+                margin-left: 10px;
+              }
+            }
           }
         }
         h4 {
@@ -83,6 +217,15 @@
           font-weight: normal;
           margin-right: 20px;
           font-size: 20px;
+          @media(max-width: 800px){
+            font-size: 1rem;
+          }
+          @media (max-width: 590px) {
+            padding-right: 0;
+            margin-right: 10px;
+            margin-bottom: 0;
+            display: block;
+          }
         }
         span, .selected-day {
           font-size: 24px;
@@ -95,6 +238,17 @@
           background: #fff;
           color: #493b30;
           position: relative;
+          @media(max-width: 800px){
+            font-size: 1.2rem;
+          }
+          @media(max-width: 690px) {
+            font-size: 1rem;
+          }
+          @media (max-width: 590px) {
+            margin-right: 10px;
+            width: 65%;
+            font-size: 1rem;
+          }
           &:after {
             content: '';
             height: 20px;
@@ -109,12 +263,23 @@
       .user-phone {
         display: inline-block;
         margin-left: 65px;
+        @media(max-width: 590px){
+        padding-top: 15px;
+          margin: 0 auto;
+          width: 80%;
+        }
         input {
           font-size: 20px;
           width: calc(270px - 20px);
           padding: 16px 0 13px 20px;
           border: none;
-
+          @media(max-width: 800px){
+            font-size: 1rem;
+          }
+          @media(max-width: 590px){
+            width: calc(236px - 20px);
+            font-size: 1rem;
+          }
         }
         button {
           font-size: 20px;
@@ -123,6 +288,13 @@
           padding: 16px 25px 13px 25px;
           background: #c0986c;
           border: none;
+          @media(max-width: 800px){
+            font-size: 1rem;
+          }
+          @media(max-width: 471px) {
+            width: 236px;
+            margin-top: 15px;
+          }
         }
       }
     }
@@ -147,6 +319,11 @@
     .show-days {
       li {
         width: calc(208px - 16px);
+      }
+      @media(max-width: 590px) {
+        li {
+          width: calc(234px - 16px);
+        }
       }
     }
   }
