@@ -22,6 +22,20 @@
     }
     .layer{
       padding-right: 24.7%;
+      @media(max-width: 560px){
+        font-size: 0.9rem;
+      }
+    }
+    .item-price {
+      text-align: center;
+      padding-left: 0;
+      padding-top: 33px;
+      @media(max-width: 560px){
+        font-size: 1.2rem;
+      }
+      @media(max-width: 520px){
+        padding-top: 40%;
+      }
     }
     div{
       margin: 0 5px 5px 0;
@@ -47,7 +61,12 @@
       @media(max-width: 800px){
         grid-template-rows: 125px 95px 95px 95px 95px;
         .table-header-item{
-          font-size: 18px;
+          font-size: 1.2rem;
+          text-align: center;
+          @media(max-width: 560px){
+            font-size: 1rem;
+            font-weight: normal;
+          }
         }
       }
     @media(max-width: 520px){
