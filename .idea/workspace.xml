@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="228640f8-3c4d-45c7-afcd-f9cd2698ca89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/boxes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/boxes.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AuthForm/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AuthForm/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainPage/reactSlider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/reactSlider.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.2cc419ce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.2cc419ce.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contacts/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contacts/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainPage/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainPage/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/News/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/News/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Price/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Price/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Price/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Price/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ПОЧАСОВКА.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/ПОЧАСОВКА.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -80,23 +85,71 @@
       </usages-collector>
       <usages-collector id="statistics.actions.runAnything" />
     </session>
+    <session id="1906890935">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="jsx" value="67" />
+          <entry key="scss" value="1206" />
+          <entry key="txt" value="19" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JSX Harmony" value="67" />
+          <entry key="PLAIN_TEXT" value="19" />
+          <entry key="SCSS" value="1206" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="ESLintLanguageService" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="JSX Harmony" value="2" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="SCSS" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.actions.runAnything" />
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="jsx" value="2" />
+          <entry key="scss" value="6" />
+          <entry key="txt" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/AuthForm/style.scss">
+        <entry file="file://$PROJECT_DIR$/src/components/Contacts/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="957">
-              <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+            <state relative-caret-position="1357">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/News/style.scss">
+        <entry file="file://$PROJECT_DIR$/src/ПОЧАСОВКА.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="368">
+              <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -104,17 +157,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/MainPage/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="279" column="18" selection-start-line="279" selection-start-column="18" selection-end-line="279" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            <state relative-caret-position="553">
+              <caret line="144" column="27" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -133,6 +177,15 @@
       <find>info</find>
       <find>slick</find>
       <find>do</find>
+      <find>descriptio</find>
+      <find>translate</find>
+      <find>new</find>
+      <find>our-pl</find>
+      <find>640</find>
+      <find>item</find>
+      <find>order-popup-unregistered</find>
+      <find>next</find>
+      <find>pop</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -151,7 +204,6 @@
         <option value="$PROJECT_DIR$/src/components/Account/orderForm/secondStep.jsx" />
         <option value="$PROJECT_DIR$/src/components/Account/orderForm/index.jsx" />
         <option value="$PROJECT_DIR$/src/components/Account/orderForm/style.scss" />
-        <option value="$PROJECT_DIR$/src/components/Contacts/style.scss" />
         <option value="$PROJECT_DIR$/src/components/Account/orderItem.jsx" />
         <option value="$PROJECT_DIR$/src/components/Account/index.jsx" />
         <option value="$PROJECT_DIR$/src/components/Account/style.scss" />
@@ -165,10 +217,15 @@
         <option value="$PROJECT_DIR$/src/components/Header/style.scss" />
         <option value="$PROJECT_DIR$/src/components/Header/index.jsx" />
         <option value="$PROJECT_DIR$/src/components/MainPage/reactSlider.jsx" />
-        <option value="$PROJECT_DIR$/src/components/News/style.scss" />
-        <option value="$PROJECT_DIR$/src/ПОЧАСОВКА.txt" />
         <option value="$PROJECT_DIR$/src/App.scss" />
         <option value="$PROJECT_DIR$/src/components/AuthForm/style.scss" />
+        <option value="$PROJECT_DIR$/src/components/News/style.scss" />
+        <option value="$PROJECT_DIR$/src/components/Footer/index.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Footer/style.scss" />
+        <option value="$PROJECT_DIR$/src/components/Price/index.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Price/style.scss" />
+        <option value="$PROJECT_DIR$/src/ПОЧАСОВКА.txt" />
+        <option value="$PROJECT_DIR$/src/components/Contacts/style.scss" />
         <option value="$PROJECT_DIR$/src/components/MainPage/style.scss" />
       </list>
     </option>
@@ -190,15 +247,14 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="2880" />
-    <option name="height" value="1620" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,7 +278,7 @@
               <item name="boxes" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="AuthForm" type="462c0819:PsiDirectoryNode" />
+              <item name="Contacts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="boxes" type="b2602c69:ProjectViewProjectNode" />
@@ -231,17 +287,11 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="MainPage" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="boxes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boxes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="News" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -294,21 +344,23 @@
       <workItem from="1536585881185" duration="1168000" />
       <workItem from="1536587921982" duration="73000" />
       <workItem from="1536762843135" duration="8414000" />
+      <workItem from="1536782457799" duration="1004000" />
+      <workItem from="1536829843397" duration="242000" />
+      <workItem from="1536832581485" duration="6767000" />
+      <workItem from="1536916983188" duration="96000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35408000" />
+    <option name="totallyTimeSpent" value="43517000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2880" height="1620" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.121212125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16178267" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -320,10 +372,11 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,9 +386,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Footer/style.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Contacts/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1193">
@@ -362,13 +412,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Account/orderSecondStep/style.scss" />
     <entry file="file://$PROJECT_DIR$/src/components/Account/orderSecondStep/index.jsx" />
-    <entry file="file://$PROJECT_DIR$/src/components/Contacts/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="95" column="24" lean-forward="true" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/News/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -425,9 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2530">
           <caret line="110" column="67" selection-start-line="110" selection-start-column="67" selection-end-line="110" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -453,9 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -466,26 +503,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/News/news-item.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/News/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="852">
+          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AuthForm/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="852">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Footer/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
           <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/News/news-item.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ПОЧАСОВКА.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -496,24 +541,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AuthForm/style.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/Footer/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="957">
-          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+        <state relative-caret-position="322">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/News/style.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/Price/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        <state relative-caret-position="859">
+          <caret line="53" column="52" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Price/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Contacts/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1357">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ПОЧАСОВКА.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/MainPage/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="279" column="18" selection-start-line="279" selection-start-column="18" selection-end-line="279" selection-end-column="18" />
+        <state relative-caret-position="553">
+          <caret line="144" column="27" selection-start-line="144" selection-start-column="27" selection-end-line="144" selection-end-column="27" />
         </state>
       </provider>
     </entry>

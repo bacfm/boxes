@@ -35,10 +35,25 @@ $secondary-text-size: 20px;
   }
   .about-company {
     background-image: url('./img/about-company.png');
+    @media(max-width: 630px){
+      padding-top: 50px;
+    }
+    @media (max-width: 580px) {
+      padding-top: 100px;
+    }
+    @media (max-width: 455px) {
+      padding-top: 30%;
+    }
     .company-description{
       @media(max-width: 980px){
         left: 50%;
         transform: translate(-50%);
+      }
+      @media(max-width: 640px){
+        width: 80%;
+      }
+      @media(max-width: 430px){
+        width: 70%;
       }
       text-align: center;
       width: calc(590px - 84px);
@@ -51,6 +66,9 @@ $secondary-text-size: 20px;
         margin-top: 27px;
         color: $secondart-text-color;
         font-size: $secondary-text-size;
+        @media(max-width: 490px){
+          font-size: 16px;
+        }
       }
     }
   }
@@ -72,6 +90,13 @@ $secondary-text-size: 20px;
       text-align: center;
       background: #ffffff;
       z-index: 1050;
+    }
+    @media(max-width: 580px){
+      .order-popup-unregistered, .callback-popup {
+        padding: 35px 25px;
+        width: calc(90% - 50px);
+        min-width: calc(435px - 50px);
+      }
     }
       h2 {
         color: #493b30;
@@ -116,13 +141,16 @@ $secondary-text-size: 20px;
             border: none;
             padding: 15px 18px 18px 18px;
             display: inline-block;
+            @media(max-width: 530px){
+              width: calc(60% - 36px);
+            }
           }
           button{
             padding: 15px 17px 18px 18px;
             border: none;
             background: #779453;
             font-size: 18px;
-            font-style: bold;
+            font-weight: bold;
             color: white;
             display: inline-block;
           }
@@ -134,8 +162,14 @@ $secondary-text-size: 20px;
           margin: 0;
           padding-bottom: 25px;
           text-align: left;
+          @media(max-width: 525px) {
+                text-align: center;
+          }
         }
         .callback-settings {
+          @media(max-width: 525px){
+            display: flex;
+          }
           h2{
             margin: 0;
             display: inline;
@@ -229,6 +263,15 @@ $secondary-text-size: 20px;
         left: 0;
         background-image: url("./img/slider-arrow.png");
       }
+      &:before{
+        display: none;
+      }
+      @media (max-width: 580px) {
+        left: 50px;
+      }
+      @media (max-width: 515px) {
+        left: 5%;
+      }
     }
     .slick-next {
       width: 38px;
@@ -243,6 +286,15 @@ $secondary-text-size: 20px;
         left: 0;
         background-image: url("./img/slider-arrow.png");
         transform: rotate(180deg);
+      }
+      &:before{
+        display: none;
+      }
+      @media (max-width: 580px) {
+          right: 60px;
+      }
+      @media (max-width: 515px) {
+        right: 7%;
       }
     }
     .slick-list {
@@ -263,11 +315,17 @@ $secondary-text-size: 20px;
       }
     }
     .products-description {
-      width: 700px;
+      width: 56.4%;
       margin: 0 auto;
+      @media(max-width: 980px){
+        width: 80%;
+      }
       p {
         color: $secondart-text-color;
         font-size: $secondary-text-size;
+        @media(max-width: 490px){
+            font-size: 16px;
+        }
       }
     }
   }
@@ -280,6 +338,12 @@ $secondary-text-size: 20px;
         width: 80%;
         left: 50%;
         transform: translate(-50%);
+      }
+      @media(max-width: 640px){
+        width: 80%;
+      }
+      @media(max-width: 430px){
+        width: 70%;
       }
       position: absolute;
       bottom: 96px;
@@ -295,6 +359,9 @@ $secondary-text-size: 20px;
           color: $secondart-text-color;
           position: relative;
           margin-bottom: 45px;
+          @media(max-width: 490px){
+            font-size: 16px;
+          }
           &:before {
             content: '';
             display: block;
@@ -305,6 +372,11 @@ $secondary-text-size: 20px;
             left: 0;
             background-image: url("./img/list-mark.png");
             background-position: 0px -26px;
+          }
+          @media(max-width: 550px){
+            &:before{
+              left: -20px;
+            }
           }
         }
       }
@@ -322,6 +394,12 @@ $secondary-text-size: 20px;
         left: 50%;
         transform: translate(-50%);
       }
+      @media(max-width: 640px){
+        width: 80%;
+      }
+      @media(max-width: 430px){
+        width: 70%;
+      }
       text-align: center;
       width: calc(590px - 84px);
       position: absolute;
@@ -333,6 +411,9 @@ $secondary-text-size: 20px;
         margin-top: 27px;
         color: $secondart-text-color;
         font-size: $secondary-text-size;
+        @media(max-width: 490px){
+          font-size: 16px;
+        }
       }
     }
   }

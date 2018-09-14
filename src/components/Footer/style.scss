@@ -5,22 +5,69 @@
   .footer-wrap{
     padding: 27px 67px 15px 72px;
     display: flex;
-    justify-content: space-between;
-    max-width: 1280px;
+    max-width: calc(1280px - 42px);
     margin: 0 auto;
+    @media (max-width: 750px) {
+      padding: 27px 15px 15px 15px;
+      justify-content: space-between;
+    }
+    @media (max-width: 520px) {
+      padding: 27px 0 15px 15px;
+      span {
+        font-size: 14px;
+      }
+    }
   .contacts {
-    .phone {
-      display: block;
-      margin-bottom: 16px;
+    width: 25%;
+    div {
+      margin: 0 auto;
+      width: 140px;
+      .phone {
+        display: block;
+        margin-bottom: 16px;
+      }
     }
   }
   .position {
-    span {
-      display: block;
-      margin-bottom: 10px;
+    width: 25%;
+    div {
+      margin: 0 auto;
+      width: 140px;
+      span {
+        display: block;
+        margin-bottom: 10px;
+      }
     }
   }
+   .email{
+     display: inline-block;
+     vertical-align: top;
+     text-align: center;
+     width: 50%;
+     @media (max-width: 970px) {
+       width: 30%;
+     }
+
+   }
+    .wrap-soc {
+      display: flex;
+      width: 50%;
+      justify-content: space-between;
+      @media (max-width: 800px) {
+        flex-direction: column;
+        width: 40%;
+        div{
+          width: 100%;
+        }
+      }
+    }
   .social {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    @media (max-width: 970px) {
+      width: 70%;
+    }
     a {
       display: inline-block;
       background-repeat: no-repeat;
