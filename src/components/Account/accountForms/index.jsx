@@ -139,8 +139,8 @@ export default class OrderForm extends React.Component {
                         <h1>Оформить заказ</h1>
                         <span className="box-instruction">Заполните информацию о товаре</span>
                         <h3 className="box-num">Коробка №{currentBoxNum}</h3>
-                        <div className="form-information">
-                            <div className="form-main-characteristics">
+                        <div className="form-information order-information">
+                            <div className="form-main-characteristics order-main-characteristics">
                                 <div className="form-field required-field"><input placeholder="Ширина(см)" value={width} onChange={this.onWidthChange}/></div>
                                 <div className="form-field required-field"><input placeholder="Длина(см)" value={long} onChange={this.onLongChange} /></div>
                                 <div className="form-field required-field"><input placeholder="Высота(см)" value={height} onChange={this.onHeightChange} /></div>
