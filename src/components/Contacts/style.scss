@@ -38,27 +38,27 @@
         position: absolute;
         border: 24px solid #c0986c;
         background: #f6f1ee;
-        padding: 0 6.48% 0 5.15%;
+        width: 30%;
         text-align: center;
         height: calc(366px - 23px);
-        @media(max-width: 1230px){
-          padding: 0 5% 0 3.2%;
+        h1{
+          margin: 0 auto;
+          padding-top: 30px;
         }
+
         @media(max-width: 1140px){
-          padding: 0 2.5% 0 2.5%;
           h1 {
             font-size: 1.7rem;
           }
         }
         @media (max-width: 980px) {
           margin-bottom: 20px;
-          h1{
-            margin: 0 auto;
-            padding-top: 35px;
-          }
         }
         @media(max-width: 490px) {
-          padding: 0 4% 0 2.5%;
+          h1{
+            font-size: 1.4rem;
+            margin: 0 auto;
+          }
         }
         .info-item {
           font-size: 24px;
@@ -79,10 +79,13 @@
           @media (max-width: 980px)
         {
           position: static;
-          width: 40%;
+          width: 50%;
         }
-        @media(max-width: 770px){
-          width: 55%;
+        @media(max-width: 640px){
+          width: 60%;
+        }
+        @media(max-width: 560px){
+          width: 70%;
         }
       }
       .contact-city {
@@ -94,10 +97,13 @@
         }
         @media (max-width: 980px) {
           position: static;
-          width: 40%;
+          width: 50%;
         }
-        @media(max-width: 770px){
-          width: 55%;
+        @media(max-width: 640px){
+          width: 60%;
+        }
+        @media(max-width: 560px){
+          width: 70%;
         }
       }
       .contact-phones {
@@ -109,10 +115,13 @@
         }
         @media (max-width: 980px) {
           position: static;
-          width: 40%;
+          width: 50%;
         }
-        @media(max-width: 770px){
-          width: 55%;
+        @media(max-width: 640px){
+          width: 60%;
+        }
+        @media(max-width: 560px){
+          width: 70%;
         }
       }
        @media(max-width: 1260px){
