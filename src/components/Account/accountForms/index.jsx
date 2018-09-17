@@ -37,6 +37,7 @@ export default class OrderForm extends React.Component {
         this.addNewBox = this.addNewBox.bind(this);
         this.onPrevBox = this.onPrevBox.bind(this);
         this.onNextBox = this.onNextBox.bind(this);
+        this.deleteBox = this.deleteBox.bind(this);
     }
     onWidthChange(ev){
         let boxCharacteristics = Object.assign({}, this.state.boxCharacteristics);
@@ -112,10 +113,21 @@ export default class OrderForm extends React.Component {
             this.setState({boxCharacteristics, currentBoxNum: this.state.currentBoxNum + 1});
         }
     }
+    deleteBox(ev){
+        ev.preventDefault();
+        if(this.state.currentBoxNum === 1){
+            let nextBox = this.state.boxes[this.state.currentBoxNum];
+            let boxes = this.state.boxes.slice(this.state.currentBoxNum);
+            this.setState({boxCharacteristics: nextBox, boxes: boxes});
+        }else{
+            let prevBox = this.state.boxes[this.state.currentBoxNum - 2];
+            let boxes = [...this.state.boxes.slice(0, this.state.currentBoxNum - 1), ...this.state.boxes.slice(this.state.currentBoxNum)];
+            this.setState({boxCharacteristics: prevBox, boxes: boxes, currentBoxNum: this.state.currentBoxNum - 1})
+        }
+    }
     onPrevBox(ev){
         ev.preventDefault();
         let prevBox = this.state.boxes[this.state.currentBoxNum - 2];
-        console.log(prevBox);
         this.setState({boxCharacteristics: prevBox, currentBoxNum: this.state.currentBoxNum - 1})
     }
     onNextBox(ev){
@@ -196,7 +208,7 @@ export default class OrderForm extends React.Component {
                             {this.state.boxes.length - this.state.currentBoxNum > 0 ? <span className="next_box" onClick={this.onNextBox}>Коробка №{currentBoxNum + 1} <img src={previous}  alt="prev"/></span> : null }
                         </div>
                         <div className="form-controls">
-                            <button className="delete_box" disabled={(this.state.boxes.length <= 1)}>Удалить коробку</button>
+                            <button onClick={this.deleteBox} className="delete_box" disabled={(this.state.boxes.length <= 1)}>Удалить коробку</button>
                             {this.state.boxes.length - this.state.currentBoxNum <= 0 ? <span className="add_new_box" onClick={this.addNewBox}>Добавить коробку <img src={add_box} alt="add"/></span> : null}
                         </div>
                         <button className="order-btn">Далее</button>

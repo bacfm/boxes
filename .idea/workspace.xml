@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="228640f8-3c4d-45c7-afcd-f9cd2698ca89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.7a48907f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.7a48907f.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Account/accountForms/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Account/accountForms/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Account/accountForms/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Account/accountForms/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/style.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,12 +37,12 @@
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.3" value="3" />
-          <entry key="project.open.time.4" value="5" />
+          <entry key="project.open.time.4" value="6" />
           <entry key="project.open.time.5" value="6" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="22" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -74,14 +65,14 @@
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="15" />
+          <entry key="ESLintLanguageService" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="5" />
           <entry key="js" value="651" />
-          <entry key="jsx" value="7158" />
+          <entry key="jsx" value="7583" />
           <entry key="scss" value="8181" />
           <entry key="txt" value="462" />
         </counts>
@@ -89,7 +80,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="5" />
-          <entry key="JSX Harmony" value="7158" />
+          <entry key="JSX Harmony" value="7583" />
           <entry key="JavaScript" value="651" />
           <entry key="PLAIN_TEXT" value="462" />
           <entry key="SCSS" value="8181" />
@@ -152,8 +143,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Account/accountForms/index.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="742">
-              <caret line="98" column="32" lean-forward="true" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+            <state relative-caret-position="996">
+              <caret line="120" column="71" selection-start-line="120" selection-start-column="71" selection-end-line="120" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -265,7 +256,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -303,6 +293,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,16 +361,18 @@
       <workItem from="1537200416576" duration="1839000" />
       <workItem from="1537211736475" duration="831000" />
       <workItem from="1537214036909" duration="3464000" />
+      <workItem from="1537217714680" duration="1048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68650000" />
+    <option name="totallyTimeSpent" value="69698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1414" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08737093" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08776807" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -633,8 +626,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Account/accountForms/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="98" column="32" lean-forward="true" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+        <state relative-caret-position="996">
+          <caret line="120" column="71" selection-start-line="120" selection-start-column="71" selection-end-line="120" selection-end-column="71" />
         </state>
       </provider>
     </entry>
