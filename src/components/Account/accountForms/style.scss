@@ -181,6 +181,10 @@
               display: flex;
               align-items: center;
               margin-right: 20px;
+              @media(max-width: 880px){
+                width: auto;
+                margin-right: 15px;
+              }
               img{
                 margin-right: 5px;
               }
@@ -269,11 +273,58 @@
         cursor: pointer;
         margin-top: 20px;
         height: 38px;
+        @media(max-width: 580px) {
+          width: 80%;
+          margin: 0 auto;
+        }
+        @media(max-width: 560px) {
+          width: 90%;
+          margin: 0 auto;
+        }
         .previous_box {
           float: left;
           img {
             vertical-align: middle;
             margin-right: 10px;
+            @media(max-width: 880px) {
+              height: 45px;
+              margin-right: 0;
+            }
+          }
+        }
+        .delete_box{
+          float: left;
+          border: none;
+          background: none;
+          color: #54473c;
+          font-size: 16px;
+          cursor: pointer;
+          padding: 9px 0  0 40px;
+          cursor: pointer;
+          &:disabled{
+            color: #c1c1c1;
+          }
+          &:before{
+            content: '';
+            background-image: url("./img/delete.png");
+            width: 32px;
+            height: 38px;
+            position: absolute;
+            top: 0;
+            left: 0px;
+          }
+          @media(max-width: 880px){
+            font-size: 14px;
+            padding: 8px 0 0 30px;
+            &:before{
+              width: 24px;
+              height: 28px;
+              top: 3px;
+              background-size: cover;
+            }
+          }
+          @media(max-width: 520px) {
+            font-size: 12px;
           }
         }
         .add_new_box {
@@ -281,6 +332,10 @@
           img {
             vertical-align: middle;
             margin-left: 10px;
+            @media(max-width: 880px) {
+              height: 35px;
+              margin-left: 3px;
+            }
           }
         }
         .next_box {
@@ -289,7 +344,26 @@
             vertical-align: middle;
             margin-left: 10px;
             transform: rotate(180deg);
+            @media(max-width: 880px) {
+              height: 45px;
+              margin-right: 0;
+            }
           }
+        }
+        @media(max-width: 880px){
+            font-size: 14px;
+        }
+        @media(max-width: 520px) {
+          font-size: 12px;
+        }
+      }
+      .switch_boxes {
+        padding-bottom: 30px;
+        @media(max-width: 880px){
+          padding-bottom: 5px;
+        }
+        @media(max-width: 580px) {
+          padding: 10px 0 25px 0;
         }
       }
       .order-btn {
@@ -299,7 +373,7 @@
         background: #779453;
         padding: 15px 0;
         font-size: 18px;
-        margin-top: 60px;
+        margin-top: 40px;
         @media(max-width: 480px){
           width: 80%;
         }
@@ -362,17 +436,14 @@
     margin-bottom: 12px;
   }
 }
-.order-section {
-  height: 980px;
+.user-order-section {
+  height: 1030px;
   @media (max-width: 880px) {
     height: 1250px;
   }
 }
 .edit-profile-section {
   height: 860px;
-  @media (max-width: 880px){
-    height: 800px;
-  }
 }
 .payment-section {
   height: 980px;

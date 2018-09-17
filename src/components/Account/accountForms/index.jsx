@@ -9,7 +9,7 @@ export default class OrderForm extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            boxes: [this.boxCharacteristics],
+            boxes: [],
             boxCharacteristics: {
                 width: '',
                 long: '',
@@ -89,22 +89,28 @@ export default class OrderForm extends React.Component {
         boxCharacteristics.pictures = [...this.state.boxCharacteristics.pictures, ...files];
         let newElem = boxCharacteristics;
         let newBoxes = [...this.state.boxes.slice(0, this.state.currentBoxNum - 1), newElem, ...this.state.boxes.slice(this.state.currentBoxNum)]
-        this.setState({boxes: newBoxes, boxCharacteristics})
+        this.setState({boxes: newBoxes, boxCharacteristics});
+        ev.target.value = '';
     }
     addNewBox(ev){
         ev.preventDefault();
-        this.setState({boxes: [...this.state.boxes, this.state.boxCharacteristics]});
-        let boxCharacteristics = Object.assign({}, this.state.boxCharacteristics);
-        boxCharacteristics.width = '';
-        boxCharacteristics.long = '';
-        boxCharacteristics.height = '';
-        boxCharacteristics.boxWeight = '';
-        boxCharacteristics.colorValue = '';
-        boxCharacteristics.pictureColorValue = '';
-        boxCharacteristics.pictures = [];
-        boxCharacteristics.specialValue = '';
-        boxCharacteristics.quantity = '';
-        this.setState({boxCharacteristics, currentBoxNum: this.state.currentBoxNum + 1});
+            const {width, long, height, colorValue, quantity} = this.state.boxCharacteristics;
+        if((width === '' || long === '' || height === '' || colorValue === '' || quantity === '')){
+            console.log("TRUE");
+            this.setState({warningFields: true})
+        }else{
+            let boxCharacteristics = Object.assign({}, this.state.boxCharacteristics);
+            boxCharacteristics.width = '';
+            boxCharacteristics.long = '';
+            boxCharacteristics.height = '';
+            boxCharacteristics.boxWeight = '';
+            boxCharacteristics.colorValue = '';
+            boxCharacteristics.pictureColorValue = '';
+            boxCharacteristics.pictures = [];
+            boxCharacteristics.specialValue = '';
+            boxCharacteristics.quantity = '';
+            this.setState({boxCharacteristics, currentBoxNum: this.state.currentBoxNum + 1});
+        }
     }
     onPrevBox(ev){
         ev.preventDefault();
@@ -133,7 +139,7 @@ export default class OrderForm extends React.Component {
         const colors = ["Черный", "Белый", "Красный", "Зеленый"];
         console.log(this.state);
         return (
-            <section className="section-container user-form-section order-section">
+            <section className="section-container user-form-section user-order-section">
                 <div className="content-wrapper form-content">
                     <div className="user-form">
                         <h1>Оформить заказ</h1>
@@ -185,10 +191,13 @@ export default class OrderForm extends React.Component {
                                 <div className="form-field required-field"><input placeholder="Количество" value={quantity} onChange={this.onQuantityChange} /></div>
                             </div>
                         </div>
-                        <div className="form-controls">
+                        <div className="form-controls switch_boxes">
                             {currentBoxNum > 1 ? <span className="previous_box" onClick={this.onPrevBox}><img src={previous} alt="prev"/> Коробка №{currentBoxNum - 1}</span> : null }
-                            {this.state.boxes.length - this.state.currentBoxNum <= 0 ? <span className="add_new_box" onClick={this.addNewBox}>Добавить коробку <img src={add_box} alt="add"/></span> : null}
                             {this.state.boxes.length - this.state.currentBoxNum > 0 ? <span className="next_box" onClick={this.onNextBox}>Коробка №{currentBoxNum + 1} <img src={previous}  alt="prev"/></span> : null }
+                        </div>
+                        <div className="form-controls">
+                            <button className="delete_box" disabled={(this.state.boxes.length <= 1)}>Удалить коробку</button>
+                            {this.state.boxes.length - this.state.currentBoxNum <= 0 ? <span className="add_new_box" onClick={this.addNewBox}>Добавить коробку <img src={add_box} alt="add"/></span> : null}
                         </div>
                         <button className="order-btn">Далее</button>
                     </div>

@@ -74,6 +74,12 @@
       width: 43px;
       height: 43px;
       margin-right: 17px;
+      @media(max-width: 520px){
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        margin-right: 10px;
+      }
     }
     .inst-logo {
       background-image: url("./img/Instagram_logo.png");
