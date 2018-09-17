@@ -11,6 +11,7 @@ import Account from './components/Account';
 import OrderForm from './components/Account/accountForms';
 import PaymentStep from './components/Account/accountForms/secondStep';
 import EditProfile from './components/Account/accountForms/editProfile';
+import ResetPassword from './components/AuthForm/reset';
 import {Switch, Route} from 'react-router-dom';
 import './App.scss';
 
@@ -22,6 +23,7 @@ class App extends Component {
           <Switch>
               <Route exact path='/signup' component={SignupForm} />
               <Route exact path='/login' component={LoginForm} />
+              <Route exact path='/reset-password' component={ResetPassword} />
               <Route exact path='/' component={MainPage}/>
               <Route exact path='/price' component={Price} />
               <Route exact path='/contacts' component={Contacts} />

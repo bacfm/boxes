@@ -133,7 +133,7 @@ export default class OrderForm extends React.Component {
         const colors = ["Черный", "Белый", "Красный", "Зеленый"];
         console.log(this.state);
         return (
-            <section className="section-container user-form-section">
+            <section className="section-container user-form-section order-section">
                 <div className="content-wrapper form-content">
                     <div className="user-form">
                         <h1>Оформить заказ</h1>

@@ -2,12 +2,32 @@
   background-image: url("./img/bg.png");
   height: 920px;
   background-repeat: no-repeat;
-  @media (max-width: 880px) {
-    height: 1250px;
-  }
   .form-content {
     position: relative;
-
+    .payment-form {
+      padding: 0 100px 42px 100px;
+      margin: 0 auto;
+      @media(max-width: 740px){
+        width: calc(80%- 200px);
+      }
+      @media(max-width: 640px){
+        padding: 0 60px 42px 60px;
+        width: calc(80%- 120px);
+      }
+      @media(max-width: 580px){
+        width: calc(80%- 120px);
+      }
+      .payment-info {
+        .list-wrapper {
+          @media(max-width: 580px) {
+            margin: 0 auto;
+          }
+        }
+      }
+      .order-btn {
+        margin-top: 20px;
+      }
+    }
     .user-form {
       position: absolute;
       left: 50%;
@@ -285,12 +305,6 @@
         }
       }
   }
-    .payment-form {
-      padding: 0 170px 42px 170px;
-      .order-btn {
-        margin-top: 20px;
-      }
-    }
   }
   .overlay {
     z-index: 60;
@@ -347,4 +361,47 @@
     list-style: none;
     margin-bottom: 12px;
   }
+}
+.order-section {
+  height: 980px;
+  @media (max-width: 880px) {
+    height: 1250px;
+  }
+}
+.edit-profile-section {
+  height: 860px;
+  @media (max-width: 880px){
+    height: 800px;
+  }
+}
+.payment-section {
+  height: 980px;
+  @media(max-width: 880px){
+  height: 1000px;
+    .payment-form {
+      .form-information {
+        .payment-info {
+          .list-wrapper {
+            @media(max-width: 460px) {
+              width: calc(90% - 20px);
+            }
+          }
+          .form-field {
+            @media(max-width: 460px) {
+              width: 100%;
+            }
+            textarea {
+              @media(max-width: 460px) {
+                max-width: calc(90% - 20px);
+                min-width: calc(90% - 20px);
+              }
+            }
+          }
+        }
+      }
+      .previous_box {
+        padding-left: 30px;
+      }
+    }
+}
 }

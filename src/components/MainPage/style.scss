@@ -157,7 +157,7 @@ $secondary-text-size: 20px;
         .number {
           margin-top: 40px;
           input{
-            width: calc(270px - 36px);
+            width: calc(265px - 36px);
             background: #e1e1e1;
             font-size: 18px;
             font-style: italic;
@@ -295,6 +295,9 @@ $secondary-text-size: 20px;
       @media (max-width: 515px) {
         left: 5%;
       }
+      @media(max-width: 420px){
+        left: 2%;
+      }
     }
     .slick-next {
       width: 38px;
@@ -318,6 +321,9 @@ $secondary-text-size: 20px;
       }
       @media (max-width: 515px) {
         right: 7%;
+      }
+      @media(max-width: 420px){
+        right: 2%;
       }
     }
     .slick-list {

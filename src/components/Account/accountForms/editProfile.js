@@ -9,7 +9,7 @@ export default class EditProfile extends React.Component {
     render (){
         const companies = ['ООО "Оазис"', 'ООО "Оазис"'];
         return (
-            <section className="section-container user-form-section">
+            <section className="section-container user-form-section edit-profile-section">
                 <div className="content-wrapper form-content">
                     <div className="user-form">
                         <h1>Редактировать профиль</h1>

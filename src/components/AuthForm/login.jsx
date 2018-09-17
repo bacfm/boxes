@@ -34,7 +34,7 @@ export default class LoginForm extends React.Component {
                             </label>
                             <div className="checkbox_text">Запомнить меня</div>
                         </div>
-                        <Link to="/">Не можете войти?</Link>
+                        <Link to="/reset-password">Не можете войти?</Link>
                     </div>
                     <button>Войти</button>
                     <Link to="/signup">Регистрация</Link>

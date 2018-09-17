@@ -16,7 +16,7 @@ export default class PaymentStep extends React.Component {
     render() {
         const {company, deliver, pay, comment} = this.state;
         return (
-            <section className="section-container user-form-section">
+            <section className="section-container user-form-section payment-section">
                 <div className="content-wrapper form-content">
                     <div className="user-form payment-form">
                         <div className="form-information" style={{display: 'block'}}>
