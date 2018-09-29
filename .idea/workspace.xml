@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="228640f8-3c4d-45c7-afcd-f9cd2698ca89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/Account/accountForms/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Account/accountForms/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.d3548881.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.d3548881.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AuthForm/signup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AuthForm/signup.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,25 +37,25 @@
     <session id="-1580515251">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="24" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.4" value="6" />
-          <entry key="project.open.time.5" value="6" />
+          <entry key="project.open.time.5" value="8" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="23" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="5" />
           <entry key="js" value="10" />
-          <entry key="jsx" value="41" />
+          <entry key="jsx" value="43" />
           <entry key="scss" value="50" />
           <entry key="txt" value="11" />
         </counts>
@@ -57,7 +63,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="5" />
-          <entry key="JSX Harmony" value="41" />
+          <entry key="JSX Harmony" value="43" />
           <entry key="JavaScript" value="10" />
           <entry key="PLAIN_TEXT" value="11" />
           <entry key="SCSS" value="50" />
@@ -65,14 +71,14 @@
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="ESLintLanguageService" value="16" />
+          <entry key="ESLintLanguageService" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="5" />
           <entry key="js" value="651" />
-          <entry key="jsx" value="7583" />
+          <entry key="jsx" value="7608" />
           <entry key="scss" value="8181" />
           <entry key="txt" value="462" />
         </counts>
@@ -80,7 +86,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="5" />
-          <entry key="JSX Harmony" value="7583" />
+          <entry key="JSX Harmony" value="7608" />
           <entry key="JavaScript" value="651" />
           <entry key="PLAIN_TEXT" value="462" />
           <entry key="SCSS" value="8181" />
@@ -141,10 +147,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Account/accountForms/index.jsx">
+        <entry file="file://$PROJECT_DIR$/src/components/AuthForm/signup.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="996">
-              <caret line="120" column="71" selection-start-line="120" selection-start-column="71" selection-end-line="120" selection-end-column="71" />
+            <state relative-caret-position="621">
+              <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -227,6 +233,7 @@
         <option value="$PROJECT_DIR$/src/components/Footer/style.scss" />
         <option value="$PROJECT_DIR$/src/components/Account/accountForms/style.scss" />
         <option value="$PROJECT_DIR$/src/components/Account/accountForms/index.jsx" />
+        <option value="$PROJECT_DIR$/src/components/AuthForm/signup.jsx" />
       </list>
     </option>
   </component>
@@ -246,9 +253,10 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="945" />
     <option name="y" value="22" />
-    <option name="width" value="2560" />
+    <option name="width" value="1615" />
     <option name="height" value="1414" />
   </component>
   <component name="ProjectView">
@@ -256,6 +264,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -279,21 +288,12 @@
               <item name="boxes" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Account" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="boxes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="boxes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Account" type="462c0819:PsiDirectoryNode" />
-              <item name="accountForms" type="462c0819:PsiDirectoryNode" />
+              <item name="AuthForm" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -361,18 +361,20 @@
       <workItem from="1537200416576" duration="1839000" />
       <workItem from="1537211736475" duration="831000" />
       <workItem from="1537214036909" duration="3464000" />
-      <workItem from="1537217714680" duration="1048000" />
+      <workItem from="1537217714680" duration="1171000" />
+      <workItem from="1537281728499" duration="20000" />
+      <workItem from="1537450077266" duration="26000" />
+      <workItem from="1538048925269" duration="911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69698000" />
+    <option name="totallyTimeSpent" value="70778000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="2560" height="1414" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="2560" height="1440" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08776807" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09134234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -548,9 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/AuthForm/signup.jsx">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/MainPage/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="404">
@@ -626,8 +625,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Account/accountForms/index.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="996">
-          <caret line="120" column="71" selection-start-line="120" selection-start-column="71" selection-end-line="120" selection-end-column="71" />
+        <state relative-caret-position="3290">
+          <caret line="174" column="44" selection-start-line="174" selection-start-column="44" selection-end-line="174" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/AuthForm/signup.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
         </state>
       </provider>
     </entry>
