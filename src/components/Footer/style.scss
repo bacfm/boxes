@@ -74,9 +74,15 @@
       width: 43px;
       height: 43px;
       margin-right: 17px;
+      @media(max-width: 790px){
+        width: 33px;
+        height: 33px;
+        background-size: cover;
+        margin-right: 10px;
+      }
       @media(max-width: 520px){
-        width: 30px;
-        height: 30px;
+        width: 23px;
+        height: 23px;
         background-size: cover;
         margin-right: 10px;
       }

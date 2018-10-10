@@ -15,11 +15,13 @@ import ResetPassword from './components/AuthForm/reset';
 import {Switch, Route} from 'react-router-dom';
 import './App.scss';
 
+const isLogged = false;
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-          <Header />
+          <Header isLogged={isLogged} />
           <Switch>
               <Route exact path='/signup' component={SignupForm} />
               <Route exact path='/login' component={LoginForm} />
